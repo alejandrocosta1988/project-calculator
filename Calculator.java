@@ -22,4 +22,9 @@ public class Calculator
         double additionResult = x + y;
         this.result += additionResult;
     }
+
+    public void eraseResult()
+    {
+        this.result = 0;
+    }
 }
