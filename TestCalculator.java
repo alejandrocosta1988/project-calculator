@@ -16,6 +16,10 @@ public class TestCalculator
         testAddition(aCalculator);
         System.out.println("Result should be 60.0 >>> Result: " + aCalculator.getResult());
         System.out.println("OK");
+        System.out.println("Testing for erasing the results of all computations...");
+        testEraseResult(aCalculator);
+        System.out.println("Result should be 0.0 >>> Result: " + aCalculator.getResult());
+        System.out.println("OK");
     }
 
     private static Calculator myCalculator = new Calculator();
@@ -38,6 +42,11 @@ public class TestCalculator
     public static void testAddition(Calculator aCalculator)
     {
         aCalculator.add(30, 30);
+    }
+
+    public static void testEraseResult(Calculator aCalculator)
+    {
+        aCalculator.eraseResult();
     }
 
 
