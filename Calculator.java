@@ -24,14 +24,14 @@ public class Calculator
 
     /**
     * @param x A double or int
-    * @param y A double or int
     * Adds a and b and stores the result of the computation in the Calculator result. Use method getResult() to access the result of the computation.
     **/
-    public void add(double x, double y)
+    public void add(double x)
     {
-        double additionResult = x + y;
-        this.result += additionResult;
+        this.result += x;
     }
+
+
 
     /**
     * Erases the results of all computations. The value of result is set back to zero.
