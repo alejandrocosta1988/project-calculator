@@ -16,4 +16,10 @@ public class Calculator
     {
         return this.result;
     }
+
+    public void add(double x, double y)
+    {
+        double additionResult = x + y;
+        this.result += additionResult;
+    }
 }
