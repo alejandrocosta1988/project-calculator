@@ -6,12 +6,14 @@ public class TestCalculator
 {
     public static void main(String[] args)
     {
-        testCreation();
+        Calculator aCalculator = testCreation();
+        System.out.println("Result should be 0.0 >>> Result: " + aCalculator.getResult());
     }
 
     /** Tests if object of class Calculator can be created **/
-    public static void testCreation()
+    public static Calculator testCreation()
     {
         Calculator myCalculator = new Calculator();
+        return myCalculator;
     }
 }
