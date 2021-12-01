@@ -12,6 +12,10 @@ public class TestCalculator
         System.out.println("Testing the initial result of the calculator...");
         System.out.println("Result should be 0.0 >>> Result: " + testInitialResult());
         System.out.println("OK");
+        System.out.println("Testing for addition...");
+        testAddition(aCalculator);
+        System.out.println("Result should be 60.0 >>> Result: " + aCalculator.getResult());
+        System.out.println("OK");
     }
 
     private static Calculator myCalculator = new Calculator();
@@ -28,6 +32,12 @@ public class TestCalculator
     {
         double initialResult = myCalculator.getResult();
         return initialResult;
+    }
+
+    /** Tests for addition **/
+    public static void testAddition(Calculator aCalculator)
+    {
+        aCalculator.add(30, 30);
     }
 
 
