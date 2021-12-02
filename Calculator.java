@@ -54,4 +54,13 @@ public class Calculator
         this.result = Operations.multiply(this.result, x);
     }
 
+    /**
+    * @param x A double or int
+    * Divides by x and stores the result. Use method getResult() to access the result of the computation.
+    **/
+    public void divide(double x)
+    {
+        this.result = Operations.divide(this.result, x);
+    }
+
 }
