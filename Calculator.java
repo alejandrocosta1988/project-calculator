@@ -45,4 +45,13 @@ public class Calculator
         this.result = Operations.subtract(this.result, x);
     }
 
+    /**
+    * @param x A double or int
+    * Multiplies by x and stores the result. Use method getResult() to access the result of the computation.
+    **/
+    public void multiply(double x)
+    {
+        this.result = Operations.multiply(this.result, x);
+    }
+
 }
