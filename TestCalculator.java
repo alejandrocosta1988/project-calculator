@@ -19,6 +19,11 @@ public class TestCalculator
         System.out.println("Result should be 30.0 >>> Result: " + aCalculator.getResult());
         System.out.println("OK");
 
+        System.out.println("Testing for subtraction...");
+        aCalculator.subtract(15);
+        System.out.println("Result should be 15.0 >>> Result: " + aCalculator.getResult());
+        System.out.println("OK");
+
         System.out.println("Testing for erasing the results of all computations...");
         aCalculator.eraseResults();
         System.out.println("Result should be 0.0 >>> Result: " + aCalculator.getResult());
