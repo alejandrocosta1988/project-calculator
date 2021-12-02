@@ -36,4 +36,13 @@ public class Calculator
         this.result = Operations.add(this.result, x);
     }
 
+    /**
+    * @param x A double or int
+    * Subtracts x and stores the result. Use method getResult() to access the result of the computation.
+    **/
+    public void subtract(double x)
+    {
+        this.result = Operations.subtract(this.result, x);
+    }
+
 }
