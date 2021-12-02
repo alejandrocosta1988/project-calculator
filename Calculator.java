@@ -11,7 +11,7 @@ public class Calculator
 
     public Calculator()
     {
-        result = 0;
+        this.result = 0;
     }
 
     /**
@@ -22,22 +22,18 @@ public class Calculator
         return this.result;
     }
 
-    /**
-    * @param x A double or int
-    * Adds a and b and stores the result of the computation in the Calculator result. Use method getResult() to access the result of the computation.
-    **/
-    public void add(double x)
-    {
-        this.result += x;
-    }
-
-
-
-    /**
-    * Erases the results of all computations. The value of result is set back to zero.
-    **/
-    public void eraseResult()
+    public void eraseResults()
     {
         this.result = 0;
     }
+
+    /**
+    * @param x A double or int
+    * Adds x and stores the result. Use method getResult() to access the result of the computation.
+    **/
+    public void add(double x)
+    {
+        this.result = Operations.add(this.result, x);
+    }
+
 }
