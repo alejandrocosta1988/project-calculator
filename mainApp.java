@@ -11,6 +11,7 @@ public class mainApp
     {
 
         boolean continueComputation = true;
+        String quit = "q";
 
         System.out.println(welcomeMessage);
 
@@ -18,7 +19,6 @@ public class mainApp
         {
           System.out.print(presentOptionToQuit);
           String userOption = askIfUserWantsToQuit(in);
-          String quit = "q";
           if (userOption.equals(quit))
           {
               break;
