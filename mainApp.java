@@ -28,7 +28,7 @@ public class mainApp
           {
               System.out.print(askUserForANumber);
               double firstNumber = captureUserNumber(in);
-              System.out.println(firstNumber);
+              aCalculator.add(firstNumber);
               System.out.println(askUserWhichOperation);
               selectedOperation = captureUserOperation(in);
               switch (selectedOperation)
@@ -49,8 +49,24 @@ public class mainApp
                       System.out.println(errorOptionDoesNotExist);
                       break;
               } // closing switch
+              System.out.print(askUserForANumber);
+              double userNumber = captureUserNumber(in);
+              if (selectedOperation == 1)
+              {
+                  aCalculator.add(userNumber);
+              } else if (selectedOperation == 2)
+              {
+                  aCalculator.subtract(userNumber);
+              } else if (selectedOperation == 3)
+              {
+                  aCalculator.multiply(userNumber);
+              } else
+              {
+                  aCalculator.divide(userNumber);
+              }
 
-              //user enter second number
+
+
               //check result or keep doing computation?
               //if user wants to check result, present the result, then asks if user wants to keep performing computations or stop.
               //if user wants to keep on computations, don't show result and asks about the next operation, and then the next number.
@@ -62,7 +78,7 @@ public class mainApp
     // messages to user
     public static String welcomeMessage = "Welcome to Calculator!";
     public static String presentOptionToQuit = "Enter 'q' if you want to quit.\n> ";
-    public static String askUserForANumber = "Enter the a number\n> ";
+    public static String askUserForANumber = "Enter a number\n> ";
     public static String askUserWhichOperation = "Choose the number corresponding to the desired operation:\n1 for addition\n2 for subtraction\n3 for multiplication\n4 for division";
     public static String additionSelected = "Operation selected: addition";
     public static String subtractionSelected = "Operation selected: subtraction";
