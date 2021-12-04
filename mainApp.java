@@ -41,7 +41,7 @@ public class mainApp
                 // incluir um while ou um 'do ... while' aqui
                 do
                 {
-                    System.out.println(askUserWhichOperation);
+                    System.out.print(askUserWhichOperation);
                     selectedOperation = captureUserOperation(in);
                     switch (selectedOperation)
                     {
@@ -101,10 +101,10 @@ public class mainApp
     } // closing main method
 
     // messages to user
-    public static String welcomeMessage = "Welcome to Calculator!";
+    public static String welcomeMessage = "\nWelcome to Calculator!";
     public static String presentOptionToQuit = "Enter 'q' if you want to quit.\n> ";
     public static String askUserForANumber = "Enter a number\n> ";
-    public static String askUserWhichOperation = "Choose the number corresponding to the desired operation:\n1 for addition\n2 for subtraction\n3 for multiplication\n4 for division\n5 to stop computations> ";
+    public static String askUserWhichOperation = "Choose the number corresponding to the desired operation:\n1 for addition\n2 for subtraction\n3 for multiplication\n4 for division\n5 to stop computations\n> ";
     public static String additionSelected = "Operation selected: addition";
     public static String subtractionSelected = "Operation selected: subtraction";
     public static String multiplicationSelected = "Operation selected: multiplication";
