@@ -39,52 +39,60 @@ public class mainApp
                 aCalculator.add(firstNumber);
 
                 // incluir um while ou um 'do ... while' aqui
-                System.out.println(askUserWhichOperation);
-                selectedOperation = captureUserOperation(in);
-                switch (selectedOperation)
+                do
                 {
-                    case 1:
+                    System.out.println(askUserWhichOperation);
+                    selectedOperation = captureUserOperation(in);
+                    switch (selectedOperation)
+                    {
+                        case 1:
                         System.out.println(additionSelected);
                         break;
-                    case 2:
+                        case 2:
                         System.out.println(subtractionSelected);
                         break;
-                    case 3:
+                        case 3:
                         System.out.println(multiplicationSelected);
                         break;
-                    case 4:
+                        case 4:
                         System.out.println(divisionSelected);
                         break;
-                    case 5:
+                        case 5:
                         System.out.println(stopSelected);
                         break;
-                    default:
+                        default:
                         System.out.println(errorOptionDoesNotExist);
                         break;
-                } // closing switch
+                    } // closing switch
 
-                System.out.print(askUserForANumber);
-                userNumber = captureUserNumber(in);
-                if (selectedOperation == 1)
-                {
-                    aCalculator.add(userNumber);
-                } else if (selectedOperation == 2)
-                {
-                    aCalculator.subtract(userNumber);
-                } else if (selectedOperation == 3)
-                {
-                    aCalculator.multiply(userNumber);
-                } else
-                {
-                    aCalculator.divide(userNumber);
-                }
+                    System.out.print(askUserForANumber);
+                    userNumber = captureUserNumber(in);
+                    if (selectedOperation == 1)
+                    {
+                        aCalculator.add(userNumber);
+                    } else if (selectedOperation == 2)
+                    {
+                        aCalculator.subtract(userNumber);
+                    } else if (selectedOperation == 3)
+                    {
+                        aCalculator.multiply(userNumber);
+                    } else
+                    {
+                        aCalculator.divide(userNumber);
+                    }
 
-                System.out.println("Current total: " + aCalculator.getResult());
+                    System.out.println("Current total: " + aCalculator.getResult());
 
-                // incluir aqui a captura do usuário: continuar ou não computando?
-                // incluir a definição do 'while' aqui
+                    System.out.print(askUserIfKeepOnComputing);
+                    continueComputation = captureIfUserWantsToKeepComputing(in);
 
-            // se o usuário interromper as computações, o programa irá retornar para o início. Importante: lembrar de reajustar o resultado da calculadora para zero nesse momento.
+                } //closing do
+                while (continueComputation == true);
+
+                System.out.println("Total: " + aCalculator.getResult());
+                System.out.println("Erasing result...");
+                aCalculator.eraseResults();
+                System.out.println("Done");
 
           } // closing else
 
@@ -103,6 +111,7 @@ public class mainApp
     public static String divisionSelected = "Operation selected: division";
     public static String stopSelected = "Operation selected: stop computations";
     public static String errorOptionDoesNotExist = "Error: Selected option does not exist.";
+    public static String askUserIfKeepOnComputing = "Do you want to keep on computing? ('y' or 'n')\n> ";
 
 
     // inputs do usuário
@@ -121,6 +130,17 @@ public class mainApp
     public static int captureUserOperation(Scanner input)
     {
         return input.nextInt();
+    }
+
+    public static boolean captureIfUserWantsToKeepComputing(Scanner input)
+    {
+        String userOption = input.next();
+        boolean result = true;
+        if (userOption.equals("n"))
+        {
+            result = false;
+        }
+        return result;
     }
 
 }
