@@ -23,16 +23,22 @@ public class mainApp
 
         while (run)
         {
+
             System.out.print(presentOptionToQuit);
             String userOption = captureIfUserWantsToQuit(in);
+
             if (userOption.equals(quit))
             {
                 break;
+
             } else
             {
+
                 System.out.print(askUserForANumber);
                 firstNumber = captureUserNumber(in);
                 aCalculator.add(firstNumber);
+
+                // incluir um while ou um 'do ... while' aqui
                 System.out.println(askUserWhichOperation);
                 selectedOperation = captureUserOperation(in);
                 switch (selectedOperation)
@@ -75,11 +81,10 @@ public class mainApp
 
                 System.out.println("Current total: " + aCalculator.getResult());
 
+                // incluir aqui a captura do usuário: continuar ou não computando?
+                // incluir a definição do 'while' aqui
 
-
-              //check result or keep doing computation?
-              //if user wants to check result, present the result, then asks if user wants to keep performing computations or stop.
-              //if user wants to keep on computations, don't show result and asks about the next operation, and then the next number.
+            // se o usuário interromper as computações, o programa irá retornar para o início. Importante: lembrar de reajustar o resultado da calculadora para zero nesse momento.
 
           } // closing else
 
