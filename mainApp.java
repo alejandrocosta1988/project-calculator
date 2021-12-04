@@ -65,6 +65,8 @@ public class mainApp
                         break;
                     } // closing switch
 
+                    if (selectedOperation == 5) break;
+
                     System.out.print(askUserForANumber);
                     userNumber = captureUserNumber(in);
                     if (selectedOperation == 1)
