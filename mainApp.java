@@ -3,7 +3,7 @@ import java.util.*;
 /*
 * Main Calculator application
 * @author Alejandro Costa
-* @version 0.1 2021-12-02
+* @version 1.0 2021-12-02
 */
 public class mainApp
 {
@@ -37,7 +37,6 @@ public class mainApp
                 firstNumber = captureUserNumber(in);
                 aCalculator.add(firstNumber);
 
-                // incluir um while ou um 'do ... while' aqui
                 do
                 {
                     System.out.print(askUserWhichOperation);
@@ -63,6 +62,10 @@ public class mainApp
                         System.out.println(errorOptionDoesNotExist);
                         break;
                     } // closing switch
+
+                    int[] possibleOptions = {1, 2, 3, 4, 5};
+                    if (!checkIfUserSelectedOptionIsValid(possibleOptions, selectedOperation))
+                        break;
 
                     if (selectedOperation == 5) break;
 
@@ -140,6 +143,19 @@ public class mainApp
         if (userOption.equals("n"))
         {
             result = false;
+        }
+        return result;
+    }
+
+    public static boolean checkIfUserSelectedOptionIsValid(int[] possibleOperations, int selectedOperation)
+    {
+        boolean result = false;
+        for (int operation: possibleOperations)
+        {
+            if (operation == selectedOperation)
+            {
+                result = true;
+            }
         }
         return result;
     }
