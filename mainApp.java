@@ -10,7 +10,6 @@ public class mainApp
     public static void main(String[] args)
     {
 
-        boolean run = true;
         boolean continueComputation = true;
         String quit = "q";
         Calculator aCalculator = new Calculator();
@@ -21,7 +20,7 @@ public class mainApp
 
         System.out.println(welcomeMessage);
 
-        while (run)
+        while (true)
         {
 
             System.out.print(presentOptionToQuit);
