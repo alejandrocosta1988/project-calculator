@@ -3,7 +3,7 @@ import java.util.*;
 /*
 * Main Calculator application
 * @author Alejandro Costa
-* @version 1.0 2021-12-02
+* @version 1.0 2021-12-07
 */
 public class mainApp
 {
