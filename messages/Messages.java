@@ -7,7 +7,8 @@ class Messages
 {
     private String welcomeMessage = "\nWelcome to Calculator!";
 
-    public Messages{};
+    public Messages(){};
 
     
+
 }
