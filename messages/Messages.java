@@ -9,6 +9,11 @@ class Messages
 
     public Messages(){};
 
-    
+    // Displays a welcome message to the user
+    public void welcomeMessage()
+    {
+        
+        System.out.print(this.welcomeMessage);
+    }
 
 }
