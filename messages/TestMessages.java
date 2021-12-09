@@ -7,8 +7,16 @@ public class TestMessages
 {
     public static void main(String[] args)
     {
+
+        System.out.println();
         System.out.println("Creating object of class Messages...");
         Messages messagesToUser = new Messages();
-        System.out.println("Done.");
+        System.out.println("Done.\n");
+
+        System.out.println("Exhibiting a welcome message...");
+        System.out.println("Result should be 'Welcome to Calculator!'. >>> Result: " + messagesToUser.welcomeMessage());
+        System.out.println("Done.\n");
+
+
     }
 }
