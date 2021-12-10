@@ -4,7 +4,7 @@ import messages.Messages;
 /*
 * Main Calculator application
 * @author Alejandro Costa
-* @version 1.0 2021-12-07
+* @version 1.1 2021-12-10
 */
 public class mainApp
 {
@@ -90,7 +90,7 @@ public class mainApp
 
                     System.out.println("Current total: " + aCalculator.getResult());
 
-                    System.out.print(askUserIfKeepOnComputing);
+                    aMessage.askUserIfKeepOnComputing();
                     continueComputation = captureIfUserWantsToKeepComputing(in);
 
                 } //closing do
@@ -106,9 +106,6 @@ public class mainApp
         } // closing while
 
     } // closing main method
-
-    // messages to user
-    public static String askUserIfKeepOnComputing = "Do you want to keep on computing? ('y' or 'n')\n> ";
 
 
     // inputs do usuário
