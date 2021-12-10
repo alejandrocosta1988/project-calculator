@@ -26,7 +26,7 @@ public class mainApp
         while (true)
         {
 
-            System.out.print(presentOptionToQuit);
+            aMessage.presentOptionToQuit();
             String userOption = captureIfUserWantsToQuit(in);
 
             if (userOption.equals(quit))
@@ -108,8 +108,6 @@ public class mainApp
     } // closing main method
 
     // messages to user
-    public static String welcomeMessage = "\nWelcome to Calculator!";
-    public static String presentOptionToQuit = "Enter 'q' if you want to quit.\n> ";
     public static String askUserForANumber = "Enter a number\n> ";
     public static String askUserWhichOperation = "Choose the number corresponding to the desired operation:\n1 for addition\n2 for subtraction\n3 for multiplication\n4 for division\n5 to stop computations\n> ";
     public static String additionSelected = "Operation selected: addition";
