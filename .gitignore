@@ -1,3 +1,5 @@
 .metadata
 .gitignore~
 *.class
+messages/.DS_Store
+
