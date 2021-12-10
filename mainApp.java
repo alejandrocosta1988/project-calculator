@@ -36,7 +36,7 @@ public class mainApp
             } else
             {
 
-                System.out.print(askUserForANumber);
+                aMessage.askUserForANumber();
                 firstNumber = captureUserNumber(in);
                 aCalculator.add(firstNumber);
 
@@ -72,7 +72,7 @@ public class mainApp
 
                     if (selectedOperation == 5) break;
 
-                    System.out.print(askUserForANumber);
+                    aMessage.askUserForANumber();
                     userNumber = captureUserNumber(in);
                     if (selectedOperation == 1)
                     {
@@ -108,7 +108,6 @@ public class mainApp
     } // closing main method
 
     // messages to user
-    public static String askUserForANumber = "Enter a number\n> ";
     public static String askUserWhichOperation = "Choose the number corresponding to the desired operation:\n1 for addition\n2 for subtraction\n3 for multiplication\n4 for division\n5 to stop computations\n> ";
     public static String additionSelected = "Operation selected: addition";
     public static String subtractionSelected = "Operation selected: subtraction";
