@@ -1,4 +1,5 @@
 import java.util.*;
+import messages.Messages;
 
 /*
 * Main Calculator application
@@ -18,7 +19,9 @@ public class mainApp
         double userNumber;
         int selectedOperation;
 
-        System.out.println(welcomeMessage);
+        Messages aMessage = new Messages();
+
+        aMessage.welcomeMessage();
 
         while (true)
         {
