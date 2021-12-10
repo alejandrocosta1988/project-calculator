@@ -35,5 +35,41 @@ public class TestMessages
         System.out.println();
         System.out.println("Done.\n");
 
+        System.out.println("Exhibiting message after selection of addition...");
+        System.out.println("Result should be 'Operation selected: addition'. >>> Result: ");
+        messagesToUser.selectedOperation("addition");
+        System.out.println();
+        System.out.println("Done.\n");
+
+        System.out.println("Exhibiting message after selection of subtraction...");
+        System.out.println("Result should be 'Operation selected: subtraction'. >>> Result: ");
+        messagesToUser.selectedOperation("subtraction");
+        System.out.println();
+        System.out.println("Done.\n");
+
+        System.out.println("Exhibiting message after selection of multiplication...");
+        System.out.println("Result should be 'Operation selected: multiplication'. >>> Result: ");
+        messagesToUser.selectedOperation("multiplication");
+        System.out.println();
+        System.out.println("Done.\n");
+
+        System.out.println("Exhibiting message after selection of division...");
+        System.out.println("Result should be 'Operation selected: division'. >>> Result: ");
+        messagesToUser.selectedOperation("division");
+        System.out.println();
+        System.out.println("Done.\n");
+
+        System.out.println("Exhibiting message after selection of stop...");
+        System.out.println("Result should be 'Operation selected: stop computations'. >>> Result: ");
+        messagesToUser.selectedOperation("stop");
+        System.out.println();
+        System.out.println("Done.\n");
+
+        System.out.println("Exhibiting message after invalid selection...");
+        System.out.println("Result should be 'Error: Selected option does not exist.'. >>> Result: ");
+        messagesToUser.selectedOperation("invalid");
+        System.out.println();
+        System.out.println("Done.\n");
+
     }
 }
