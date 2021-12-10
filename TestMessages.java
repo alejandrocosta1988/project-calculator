@@ -19,5 +19,10 @@ public class TestMessages
         System.out.println();
         System.out.println("Done.\n");
 
+        System.out.println("Exhibiting message with option to quit...");
+        System.out.println("Result should be 'Enter 'q' if you want to quit.'. >>> Result: "); messagesToUser.presentOptionToQuit();
+        System.out.println();
+        System.out.println("Done.\n");
+
     }
 }
