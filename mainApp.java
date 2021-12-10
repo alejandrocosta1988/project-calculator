@@ -42,7 +42,7 @@ public class mainApp
 
                 do
                 {
-                    System.out.print(askUserWhichOperation);
+                    aMessage.askUserWhichOperation();
                     selectedOperation = captureUserOperation(in);
                     switch (selectedOperation)
                     {
@@ -108,7 +108,6 @@ public class mainApp
     } // closing main method
 
     // messages to user
-    public static String askUserWhichOperation = "Choose the number corresponding to the desired operation:\n1 for addition\n2 for subtraction\n3 for multiplication\n4 for division\n5 to stop computations\n> ";
     public static String additionSelected = "Operation selected: addition";
     public static String subtractionSelected = "Operation selected: subtraction";
     public static String multiplicationSelected = "Operation selected: multiplication";
