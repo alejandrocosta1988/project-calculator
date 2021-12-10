@@ -7,6 +7,7 @@ package messages;
 public class Messages
 {
     private String welcomeMessage = "\nWelcome to Calculator!";
+    private String presentOptionToQuit = "Enter 'q' if you want to quit.\n> ";
 
     public Messages(){};
 
@@ -14,6 +15,11 @@ public class Messages
     public void welcomeMessage()
     {
         System.out.println(this.welcomeMessage);
+    }
+
+    public void presentOptionToQuit()
+    {
+        System.out.print(this.presentOptionToQuit);
     }
 
 }
