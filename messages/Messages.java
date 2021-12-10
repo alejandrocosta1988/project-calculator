@@ -11,6 +11,13 @@ public class Messages
     private String askUserForANumber = "Enter a number\n> ";
     private String askUserWhichOperation = "Choose the number corresponding to the desired operation:\n1 for addition\n2 for subtraction\n3 for multiplication\n4 for division\n5 to stop computations\n> ";
 
+    private String additionSelected = "Operation selected: addition";
+    private String subtractionSelected = "Operation selected: subtraction";
+    private String multiplicationSelected = "Operation selected: multiplication";
+    private String divisionSelected = "Operation selected: division";
+    private String stopSelected = "Operation selected: stop computations";
+    private String errorOptionDoesNotExist = "Error: Selected option does not exist.";
+
     public Messages(){};
 
     // Displays a welcome message to the user
@@ -32,6 +39,34 @@ public class Messages
     public void askUserWhichOperation()
     {
         System.out.print(this.askUserWhichOperation);
+    }
+
+    public void selectedOperation(String operation)
+    {
+        if (operation.equals("addition"))
+        {
+            System.out.println(this.additionSelected);
+        }
+        else if (operation.equals("subtraction"))
+        {
+            System.out.println(this.subtractionSelected);
+        }
+        else if (operation.equals("multiplication"))
+        {
+            System.out.println(this.multiplicationSelected);
+        }
+        else if (operation.equals("division"))
+        {
+            System.out.println(this.divisionSelected);
+        }
+        else if (operation.equals("stop"))
+        {
+            System.out.println(this.stopSelected);
+        }
+        else
+        {
+            System.out.println(this.errorOptionDoesNotExist);
+        }
     }
 
 }
