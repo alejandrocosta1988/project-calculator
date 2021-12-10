@@ -18,6 +18,8 @@ public class Messages
     private String stopSelected = "Operation selected: stop computations";
     private String errorOptionDoesNotExist = "Error: Selected option does not exist.";
 
+    private String askUserIfKeepOnComputing = "Do you want to keep on computing? ('y' or 'n')\n> ";
+
     public Messages(){};
 
     // Displays a welcome message to the user
@@ -67,6 +69,11 @@ public class Messages
         {
             System.out.println(this.errorOptionDoesNotExist);
         }
+    }//closing operation selection message
+
+    public void askUserIfKeepOnComputing()
+    {
+        System.out.print(this.askUserIfKeepOnComputing);
     }
 
 }
