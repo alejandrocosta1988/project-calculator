@@ -24,5 +24,10 @@ public class TestMessages
         System.out.println();
         System.out.println("Done.\n");
 
+        System.out.println("Exhibiting message asking user for a number...");
+        System.out.println("Result should be 'Enter a number > '. >>> Result: "); messagesToUser.askUserForANumber();
+        System.out.println();
+        System.out.println("Done.\n");
+
     }
 }
