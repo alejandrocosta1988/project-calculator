@@ -29,5 +29,11 @@ public class TestMessages
         System.out.println();
         System.out.println("Done.\n");
 
+        System.out.println("Exhibiting message asking user about which operetation should be computed...");
+        System.out.println("Result should be 'Choose the number corresponding to the desired operation: 1 for addition 2 for subtraction 3 for multiplication 4 for division 5 to stop computations > '. >>> Result: ");
+        messagesToUser.askUserWhichOperation();
+        System.out.println();
+        System.out.println("Done.\n");
+
     }
 }
