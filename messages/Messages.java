@@ -9,6 +9,7 @@ public class Messages
     private String welcomeMessage = "\nWelcome to Calculator!";
     private String presentOptionToQuit = "Enter 'q' if you want to quit.\n> ";
     private String askUserForANumber = "Enter a number\n> ";
+    private String askUserWhichOperation = "Choose the number corresponding to the desired operation:\n1 for addition\n2 for subtraction\n3 for multiplication\n4 for division\n5 to stop computations\n> ";
 
     public Messages(){};
 
@@ -26,6 +27,11 @@ public class Messages
     public void askUserForANumber()
     {
         System.out.print(this.askUserForANumber);
+    }
+
+    public void askUserWhichOperation()
+    {
+        System.out.print(this.askUserWhichOperation);
     }
 
 }
