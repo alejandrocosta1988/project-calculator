@@ -71,5 +71,11 @@ public class TestMessages
         System.out.println();
         System.out.println("Done.\n");
 
+        System.out.println("Exhibiting message asking if user wishes to keep computing...");
+        System.out.println("Result should be 'Do you want to keep on computing? ('y' or 'n') >'. >>> Result: ");
+        messagesToUser.askUserIfKeepOnComputing();
+        System.out.println();
+        System.out.println("Done.\n");
+
     }
 }
