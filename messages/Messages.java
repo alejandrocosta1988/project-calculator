@@ -8,6 +8,7 @@ public class Messages
 {
     private String welcomeMessage = "\nWelcome to Calculator!";
     private String presentOptionToQuit = "Enter 'q' if you want to quit.\n> ";
+    private String askUserForANumber = "Enter a number\n> ";
 
     public Messages(){};
 
@@ -20,6 +21,11 @@ public class Messages
     public void presentOptionToQuit()
     {
         System.out.print(this.presentOptionToQuit);
+    }
+
+    public void askUserForANumber()
+    {
+        System.out.print(this.askUserForANumber);
     }
 
 }
