@@ -47,22 +47,22 @@ public class mainApp
                     switch (selectedOperation)
                     {
                         case 1:
-                        System.out.println(additionSelected);
+                        aMessage.selectedOperation("addition");
                         break;
                         case 2:
-                        System.out.println(subtractionSelected);
+                        aMessage.selectedOperation("subtraction");
                         break;
                         case 3:
-                        System.out.println(multiplicationSelected);
+                        aMessage.selectedOperation("multiplication");
                         break;
                         case 4:
-                        System.out.println(divisionSelected);
+                        aMessage.selectedOperation("division");
                         break;
                         case 5:
-                        System.out.println(stopSelected);
+                        aMessage.selectedOperation("stop");
                         break;
                         default:
-                        System.out.println(errorOptionDoesNotExist);
+                        aMessage.selectedOperation("invalid");
                         break;
                     } // closing switch
 
@@ -108,12 +108,6 @@ public class mainApp
     } // closing main method
 
     // messages to user
-    public static String additionSelected = "Operation selected: addition";
-    public static String subtractionSelected = "Operation selected: subtraction";
-    public static String multiplicationSelected = "Operation selected: multiplication";
-    public static String divisionSelected = "Operation selected: division";
-    public static String stopSelected = "Operation selected: stop computations";
-    public static String errorOptionDoesNotExist = "Error: Selected option does not exist.";
     public static String askUserIfKeepOnComputing = "Do you want to keep on computing? ('y' or 'n')\n> ";
 
 
