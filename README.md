@@ -17,6 +17,10 @@ The `Calculator` class is defined within the package `calculator`. An instance o
 
 `Calculator` implements methods that increment the stored result of its instances. For example: the `Operations` class defines a method to perform addition of two numbers. The class `Calculator` implements a method that takes the current result of the `Calculator` object together with some other number, and passes both as inputs to the `Operations` method responsible to perform the addition. The result of this computation is stored in the private variable `result`.
 
+#### Variables in the class
+
+##### `result`
+A `double` that stores the results of computations. This value is updated after each operation performed by the `Calculator`, but is not visible to the user. To access its value, method `getResult()` should be used. To erase its value, method `eraseResults()` should be used.
 
 ### The `Operations` class
 
