@@ -9,7 +9,7 @@ If you wish to contribute with tips and reviews of the code, I will truly apprec
 ## The structure of the Calculator
 
 The Calculator project is structured with four classes: `Calculator`, `Operations`, `Messages`, and `mainApp`. Each of these classes are responsible for specific tasks, that together build up the calculator, as will be seen in the following sections.
-Class `Messages`is defined within the package `messages`. Classes `Calculator` and `Operations` are defined within the package `calculator`.
+Class `Messages` is defined within the package `messages`. Classes `Calculator` and `Operations` are defined within the package `calculator`.
 
 ### The `Calculator` class
 
