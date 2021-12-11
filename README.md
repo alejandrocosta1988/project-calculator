@@ -13,6 +13,11 @@ Class `Messages`is defined within the package `messages`. Classes `Calculator` a
 
 ### The `Calculator` class
 
+The `Calculator` class is defined within the package `calculator`. An instance of `Calculator` is an object that stores result of computations, and performs computations of the four basic arithmetical operations: addition, subtraction, multiplication and division. Each of these basic operations are defined in the class `Operations`, which belong to the same package.
+
+`Calculator` implements methods that increment the stored result of its instances. For example: the `Operations` class defines a method to perform addition of two numbers. The class `Calculator` implements a method that takes the current result of the `Calculator` object together with some other number, and passes both as inputs to the `Operations` method responsible to perform the addition. The result of this computation is stored in the private variable `result`.
+
+
 ### The `Operations` class
 
 ### The `Messages` class
