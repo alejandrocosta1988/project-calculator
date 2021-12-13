@@ -30,6 +30,18 @@ An accessor method which returns the current value of `result`.
 ##### `eraseResults()`
 A modifier method which sets the current value of `result` to zero.
 
+##### `add(double x)`
+A modifier method which adds `x` to `result`.
+
+##### `subtract(double x)`
+A modifier method which subtracts `x` from `result`.
+
+##### `multiply(double x)`
+A modifier method which multiplies `result` by `x`.
+
+##### `divide(double x)`
+A modifier method which divides `result` by `x`.
+
 ### The `Operations` class
 
 ### The `Messages` class
