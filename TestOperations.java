@@ -1,3 +1,4 @@
+import calculator.Operations;
 /* Implements tests for class Operations
 * @author Alejandro Costa
 * @version 0.1 2021-12-02
