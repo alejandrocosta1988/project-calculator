@@ -44,6 +44,22 @@ A modifier method which divides `result` by `x`.
 
 ### The `Operations` class
 
+The `Operations` class is defined within the package `calculator`. It defines four public methods to be used to perform the basic arithmetical operations: addition, subtraction, multiplication and division. There are no variables defined in the class.
+
+#### Methods
+
+##### `add(double x, double y)`
+Returns `x` + `y`.
+
+##### `subtract(double x, double y)`
+Returns `x` - `y`.
+
+##### `multiply(double x, double y)`
+Returns `x` * `y`.
+
+##### `divide(double x, double y)`
+Returns `x` / `y`.
+
 ### The `Messages` class
 
 ### The `mainApp` class
