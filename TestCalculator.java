@@ -1,3 +1,4 @@
+import calculator.Calculator;
 /** Tests for class Calculator
 * @author Alejandro Costa
 * @version 0.1
