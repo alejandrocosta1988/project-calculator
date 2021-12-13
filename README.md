@@ -22,6 +22,14 @@ The `Calculator` class is defined within the package `calculator`. An instance o
 ##### `result`
 A `double` that stores the results of computations. This value is updated after each operation performed by the `Calculator`, but is not visible to the user. To access its value, method `getResult()` should be used. To erase its value, method `eraseResults()` should be used.
 
+#### Methods
+
+##### `getResult()`
+An accessor method which returns the current value of `result`.
+
+##### `eraseResults()`
+A modifier method which sets the current value of `result` to zero.
+
 ### The `Operations` class
 
 ### The `Messages` class
