@@ -1,3 +1,4 @@
+package calculator;
 /** Implements a calculator that uses methods defined in the class Operations to perform computations and store the obtained results. Calculator contains methods to show results to the user, to erase the stored results to restart computations, and to increment the stored result with further computations of the four basic arithmetical operations (addition, subtraction, multiplication and division).
 * @author Alejandro Costa
 * @version 1.0 2021-12-11

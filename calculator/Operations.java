@@ -1,3 +1,4 @@
+package calculator;
 /**
 * Class with methods to compute basic operations
 * @author Alejandro Costa
@@ -28,5 +29,5 @@ public class Operations
     {
         return a / b;
     }
-    
+
 }
