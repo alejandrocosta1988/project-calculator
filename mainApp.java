@@ -21,6 +21,7 @@ public class mainApp
         int selectedOperation;
 
         Messages aMessage = new Messages();
+        Scanner userInput = new Scanner(System.in);
 
         aMessage.welcomeMessage();
 
@@ -28,7 +29,7 @@ public class mainApp
         {
 
             aMessage.presentOptionToQuit();
-            String userOption = captureIfUserWantsToQuit(in);
+            String userOption = CaptureUserInputs.captureIfUserWantsToQuit(userInput);
 
             if (userOption.equals(quit))
             {
