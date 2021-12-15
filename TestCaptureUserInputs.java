@@ -12,11 +12,15 @@ public class TestCaptureUserInputs
     {
         Scanner in = new Scanner(System.in);
         String testInputString;
+        double testInputNumber;
 
-        System.out.println("Testing captureIfUserWantsToQuit(): Enter with a string/n> ");
+        System.out.print("Testing captureIfUserWantsToQuit(): Enter with a string\n> ");
         testInputString = CaptureUserInputs.captureIfUserWantsToQuit(in);
         System.out.println("Result should be what you entered: " + testInputString);
 
+        System.out.print("Testing captureUserNumber(): Enter with a number\n> ");
+        testInputNumber = CaptureUserInputs.captureUserNumber(in);
+        System.out.println("Result should be what you entered: " + testInputNumber);
 
     }
 }
