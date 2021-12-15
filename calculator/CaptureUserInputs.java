@@ -11,5 +11,10 @@ public class CaptureUserInputs
         return input.next();
     }
 
+    public static double captureUserNumber(Scanner input)
+    {
+        return input.nextDouble();
+    }
+
 
 }
