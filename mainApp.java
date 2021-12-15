@@ -39,7 +39,7 @@ public class mainApp
             {
 
                 aMessage.askUserForANumber();
-                firstNumber = captureUserNumber(in);
+                firstNumber = CaptureUserInputs.captureUserNumber(userInput);
                 aCalculator.add(firstNumber);
 
                 do
@@ -75,7 +75,7 @@ public class mainApp
                     if (selectedOperation == 5) break;
 
                     aMessage.askUserForANumber();
-                    userNumber = captureUserNumber(in);
+                    userNumber = CaptureUserInputs.captureUserNumber(userInput);
                     if (selectedOperation == 1)
                     {
                         aCalculator.add(userNumber);
@@ -112,16 +112,6 @@ public class mainApp
 
     // inputs do usuário
     static Scanner in = new Scanner(System.in);
-
-    public static String captureIfUserWantsToQuit(Scanner input)
-    {
-        return input.next();
-    }
-
-    public static double captureUserNumber(Scanner input)
-    {
-        return input.nextDouble();
-    }
 
     public static int captureUserOperation(Scanner input)
     {
