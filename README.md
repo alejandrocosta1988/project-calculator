@@ -72,6 +72,9 @@ Method to capture a string from the user. This method is used in the `mainApp` t
 ##### `captureUserNumber(Scanner input)`
 Method to capture a number from the user. This number is used by the `mainApp` to perform a computation.
 
+##### `captureUserOperation(Scanner input)`
+Method to capture an integer from the user. This integer is used by the `mainApp` to select the corresponding operation.
+
 ### The `Messages` class
 
 ### The `mainApp` class
