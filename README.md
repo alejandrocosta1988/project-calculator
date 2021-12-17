@@ -8,8 +8,8 @@ If you wish to contribute with tips and reviews of the code, I will truly apprec
 
 ## The structure of the Calculator
 
-The Calculator project is structured with four classes: `Calculator`, `Operations`, `Messages`, and `mainApp`. Each of these classes are responsible for specific tasks, that together build up the calculator, as will be seen in the following sections.
-Class `Messages` is defined within the package `messages`. Classes `Calculator` and `Operations` are defined within the package `calculator`.
+The Calculator project is structured with five classes: `Calculator`, `Operations`, `Messages`, `CaptureUserInputs`, and `mainApp`. Each of these classes are responsible for specific tasks, that together build up the calculator, as will be seen in the following sections.
+Class `Messages` is defined within the package `messages`. Classes `Calculator`, `Operations`, and `CaptureUserInputs` are defined within the package `calculator`.
 
 ### The `Calculator` class
 
@@ -59,6 +59,24 @@ Returns `x` * `y`.
 
 ##### `divide(double x, double y)`
 Returns `x` / `y`.
+
+### The `CaptureUserInputs` class
+
+The `CaptureUserInputs` class is defined within the package `calculator`. It defines four public methods devoted to capture inputs from the user.
+
+#### Methods
+
+##### `captureIfUserWantsToQuit(Scanner input)`
+Method to capture a string from the user. This method is used in the `mainApp` to check if the input is 'q'. If that is the case, it means that the user wants to quit the program.
+
+##### `captureUserNumber(Scanner input)`
+Method to capture a number from the user. This number is used by the `mainApp` to perform a computation.
+
+##### `captureUserOperation(Scanner input)`
+Method to capture an integer from the user. This integer is used by the `mainApp` to select the corresponding operation.
+
+##### `captureIfUserWantsToKeepComputing(Scanner input)`
+Method to capture a String from the user. The method checks if the input String is 'n'. If it is 'n', it will return a boolean false. If the String is other than 'n', it will return boolean true. The boolean value will be used by the `mainApp` to keep or to stop computations.
 
 ### The `Messages` class
 

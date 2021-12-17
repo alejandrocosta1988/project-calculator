@@ -21,6 +21,7 @@ public class mainApp
         int selectedOperation;
 
         Messages aMessage = new Messages();
+        Scanner userInput = new Scanner(System.in);
 
         aMessage.welcomeMessage();
 
@@ -28,7 +29,7 @@ public class mainApp
         {
 
             aMessage.presentOptionToQuit();
-            String userOption = captureIfUserWantsToQuit(in);
+            String userOption = CaptureUserInputs.captureIfUserWantsToQuit(userInput);
 
             if (userOption.equals(quit))
             {
@@ -38,13 +39,13 @@ public class mainApp
             {
 
                 aMessage.askUserForANumber();
-                firstNumber = captureUserNumber(in);
+                firstNumber = CaptureUserInputs.captureUserNumber(userInput);
                 aCalculator.add(firstNumber);
 
                 do
                 {
                     aMessage.askUserWhichOperation();
-                    selectedOperation = captureUserOperation(in);
+                    selectedOperation = CaptureUserInputs.captureUserOperation(userInput);
                     switch (selectedOperation)
                     {
                         case 1:
@@ -74,7 +75,7 @@ public class mainApp
                     if (selectedOperation == 5) break;
 
                     aMessage.askUserForANumber();
-                    userNumber = captureUserNumber(in);
+                    userNumber = CaptureUserInputs.captureUserNumber(userInput);
                     if (selectedOperation == 1)
                     {
                         aCalculator.add(userNumber);
@@ -92,7 +93,7 @@ public class mainApp
                     System.out.println("Current total: " + aCalculator.getResult());
 
                     aMessage.askUserIfKeepOnComputing();
-                    continueComputation = captureIfUserWantsToKeepComputing(in);
+                    continueComputation = CaptureUserInputs.captureIfUserWantsToKeepComputing(userInput);
 
                 } //closing do
                 while (continueComputation == true);
@@ -107,36 +108,6 @@ public class mainApp
         } // closing while
 
     } // closing main method
-
-
-    // inputs do usuário
-    static Scanner in = new Scanner(System.in);
-
-    public static String captureIfUserWantsToQuit(Scanner input)
-    {
-        return input.next();
-    }
-
-    public static double captureUserNumber(Scanner input)
-    {
-        return input.nextDouble();
-    }
-
-    public static int captureUserOperation(Scanner input)
-    {
-        return input.nextInt();
-    }
-
-    public static boolean captureIfUserWantsToKeepComputing(Scanner input)
-    {
-        String userOption = input.next();
-        boolean result = true;
-        if (userOption.equals("n"))
-        {
-            result = false;
-        }
-        return result;
-    }
 
     public static boolean checkIfUserSelectedOptionIsValid(int[] possibleOperations, int selectedOperation)
     {
