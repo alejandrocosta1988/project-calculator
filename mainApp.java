@@ -45,7 +45,7 @@ public class mainApp
                 do
                 {
                     aMessage.askUserWhichOperation();
-                    selectedOperation = captureUserOperation(in);
+                    selectedOperation = CaptureUserInputs.captureUserOperation(userInput);
                     switch (selectedOperation)
                     {
                         case 1:
@@ -113,10 +113,7 @@ public class mainApp
     // inputs do usuário
     static Scanner in = new Scanner(System.in);
 
-    public static int captureUserOperation(Scanner input)
-    {
-        return input.nextInt();
-    }
+
 
     public static boolean captureIfUserWantsToKeepComputing(Scanner input)
     {
