@@ -11,9 +11,16 @@ public class CaptureUserInputs
         return input.next();
     }
 
+    //Captures a number from the user to be used in the computation.
     public static double captureUserNumber(Scanner input)
     {
         return input.nextDouble();
+    }
+
+    //Captures an integer from the user, which corresponds to the desired operation.
+    public static int captureUserOperation(Scanner input)
+    {
+        return input.nextInt();
     }
 
 
