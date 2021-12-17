@@ -75,6 +75,9 @@ Method to capture a number from the user. This number is used by the `mainApp` t
 ##### `captureUserOperation(Scanner input)`
 Method to capture an integer from the user. This integer is used by the `mainApp` to select the corresponding operation.
 
+##### `captureIfUserWantsToKeepComputing(Scanner input)`
+Method to capture a String from the user. The method checks if the input String is 'n'. If it is 'n', it will return a boolean false. If the String is other than 'n', it will return boolean true. The boolean value will be used by the `mainApp` to keep or to stop computations.
+
 ### The `Messages` class
 
 ### The `mainApp` class
