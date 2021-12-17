@@ -93,7 +93,7 @@ public class mainApp
                     System.out.println("Current total: " + aCalculator.getResult());
 
                     aMessage.askUserIfKeepOnComputing();
-                    continueComputation = captureIfUserWantsToKeepComputing(in);
+                    continueComputation = CaptureUserInputs.captureIfUserWantsToKeepComputing(userInput);
 
                 } //closing do
                 while (continueComputation == true);
@@ -108,23 +108,6 @@ public class mainApp
         } // closing while
 
     } // closing main method
-
-
-    // inputs do usuário
-    static Scanner in = new Scanner(System.in);
-
-
-
-    public static boolean captureIfUserWantsToKeepComputing(Scanner input)
-    {
-        String userOption = input.next();
-        boolean result = true;
-        if (userOption.equals("n"))
-        {
-            result = false;
-        }
-        return result;
-    }
 
     public static boolean checkIfUserSelectedOptionIsValid(int[] possibleOperations, int selectedOperation)
     {
