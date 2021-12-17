@@ -8,8 +8,8 @@ If you wish to contribute with tips and reviews of the code, I will truly apprec
 
 ## The structure of the Calculator
 
-The Calculator project is structured with four classes: `Calculator`, `Operations`, `Messages`, and `mainApp`. Each of these classes are responsible for specific tasks, that together build up the calculator, as will be seen in the following sections.
-Class `Messages` is defined within the package `messages`. Classes `Calculator` and `Operations` are defined within the package `calculator`.
+The Calculator project is structured with five classes: `Calculator`, `Operations`, `Messages`, `CaptureUserInputs`, and `mainApp`. Each of these classes are responsible for specific tasks, that together build up the calculator, as will be seen in the following sections.
+Class `Messages` is defined within the package `messages`. Classes `Calculator`, `Operations`, and `CaptureUserInputs` are defined within the package `calculator`.
 
 ### The `Calculator` class
 
@@ -59,6 +59,18 @@ Returns `x` * `y`.
 
 ##### `divide(double x, double y)`
 Returns `x` / `y`.
+
+### The `CaptureUserInputs` class
+
+The `CaptureUserInputs` class is defined within the package `calculator`. It defines four public methods devoted to capture inputs from the user.
+
+#### Methods
+
+##### `captureIfUserWantsToQuit(Scanner input)`
+Method to capture a string from the user. This method is used in the `mainApp` to check if the input is 'q'. If that is the case, it means that the user wants to quit the program.
+
+##### `captureUserNumber(Scanner input)`
+Method to capture a number from the user. This number is used by the `mainApp` to perform a computation.
 
 ### The `Messages` class
 
