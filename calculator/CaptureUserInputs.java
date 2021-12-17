@@ -23,5 +23,17 @@ public class CaptureUserInputs
         return input.nextInt();
     }
 
+    //Captures a string ('y' or 'n') from the user to be used to define if the user wants to keep computing or to restart computations.
+    public static boolean captureIfUserWantsToKeepComputing(Scanner input)
+    {
+        String userOption = input.next();
+        boolean result = true;
+        if (userOption.equals("n"))
+        {
+            result = false;
+        }
+        return result;
+    }
+
 
 }
